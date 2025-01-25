@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Number Guessing Game</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<!-- Main header with the title of the game -->
+				<h1>Number Guessing Game</h1>
+				<!-- Message displayed in different stages of the game -->
+				<p class="message">Guess the number!</p>
+			</header>
+			<main class="main">
+				<!-- Section for showing the current score and high score -->
+				<div class="score-container">
+					<p>Score: <span class="score">15</span></p>
+					<p>Highscore: <span class="highscore">0</span></p>
+				</div>
+				<div class="game-container">
+					<!-- The number container where the guessed number is displayed -->
+					<span class="number">?</span>
+					<!-- Input field where the player types the guess -->
+					<input type="number" class="guess" placeholder="Guess the number!" />
+					<!-- Button that checks the guess -->
+					<button class="check">Check</button>
+				</div>
+				<!-- Button to restart the game -->
+				<button class="again">Again</button>
+			</main>
+			<!-- Container for the balloons that appear when the game is won -->
+			<div class="balloon-container hidden"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

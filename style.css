@@ -1,0 +1,151 @@
+/* Global styles to reset margin, padding, and set box-sizing */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body styling - background color, font, and centering the content */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #a5d8ff;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Main container for the game */
+.container {
+	text-align: center;
+	position: relative;
+}
+
+/* Styling for the number display */
+.number {
+	font-size: 4rem;
+	margin: 20px 0;
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	line-height: 5rem;
+	border: 2px solid #333;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+/* Styling for the guess input field */
+.guess {
+	font-size: 1.5rem;
+	padding: 10px;
+	margin: 15px;
+	border: 2px solid #333;
+	border-radius: 5px;
+	width: 200px;
+}
+
+/* Button styling for both 'Check' and 'Again' buttons */
+button {
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	margin: 10px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+	background-color: #0056b3;
+}
+
+/* Balloon container for the floating balloons */
+.balloon-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 10;
+	pointer-events: none;
+}
+
+/* Balloon styling for the floating balloons */
+.balloon {
+	position: absolute;
+	width: 50px;
+	height: 70px;
+	background-color: #f04e30;
+	border-radius: 50%;
+	bottom: -80px;
+	animation: floatUp 4s ease-in infinite;
+}
+
+/* Keyframes for the floating balloon animation */
+@keyframes floatUp {
+	0% {
+		bottom: -80px;
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		bottom: 100%;
+		transform: scale(1);
+	}
+}
+
+/* Styling for the score container (score and highscore display) */
+.score-container p {
+	font-size: 1.5rem;
+	color: #333;
+}
+
+/* Score color for current score */
+.score-container .score {
+	font-weight: 600;
+	color: #f04e30;
+}
+
+/* Highscore color */
+.score-container .highscore {
+	font-weight: 600;
+	color: #28a745;
+}
+
+/* Message styling for game instructions or result */
+.message {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #333;
+}
+
+/* Game input container styling */
+.game-container {
+	margin: 30px;
+}
+
+/* Input field focus color */
+.game-container input {
+	border-color: #f04e30;
+}
+
+/* Input field border color when focused */
+.game-container input:focus {
+	border-color: #28a745;
+}
+
+/* Button color for 'Check' button */
+.game-container button {
+	background-color: #f04e30;
+}
+
+/* Button hover effect */
+.game-container button:hover {
+	background-color: #28a745;
+}
